@@ -1,0 +1,239 @@
+head,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+head,
+body {
+    overflow-x: hidden;
+}
+
+.logo h1 {
+    font-size: 28px;
+    display: inline;
+    color: #000;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.logo p {
+    display: inline;
+    font-size: 22px;
+    color: #000;
+}
+
+.logo::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    margin-top: 7px;
+    margin-right: 10px;
+}
+
+.logo {
+    display: flex;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+    background-color: #fff;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style-type: none;
+    padding: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav ul li:last-child {
+    padding-right: 0;
+}
+
+nav ul li a:hover {
+    color: blue;
+}
+
+nav ul li a:active {
+    color: blue;
+}
+
+body {
+    background-color: rgb(230, 218, 206);
+}
+
+.container {
+    margin-left: 440px;
+    margin-right: 440px;
+}
+
+.mainPart .container h1 {
+    text-align: center;
+    padding-top: 50px;
+    display: flex;
+    position: relative;
+    left: 40%;
+}
+
+h1::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    margin-top: 7px;
+    margin-right: 10px;
+}
+
+.mainPart .container .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cv {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #0050FF;
+    background-color: #0050FF;
+    padding: 7px 15px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.cv:hover {
+    background-color: rgb(230, 218, 206);
+    border-width: 2px;
+    color: black;
+}
+
+h3,
+p {
+    color: black;
+}
+
+.resume .container .row {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #fff;
+    background-color: #fff;
+    flex-basis: 50%;
+    padding: 50px 70px;
+    margin-bottom: 40px;
+}
+
+.resume .container .row .col {
+    width: 100%;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.co_name {
+    font-size: 14px;
+}
+
+.year {
+    color: #0050FF;
+    position: relative;
+    left: -36%;
+}
+
+.description p {
+    padding-top: 20px;
+    font-size: 16px;
+}
+
+/* footer */
+footer {
+    background-color: #fff;
+    padding: 50px 50px 0 50px;
+}
+
+footer .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .row .col .new_row {
+    display: flex;
+}
+
+footer .row .col .new_row .column {
+    padding-left: 40px;
+}
+
+h3 {
+    padding-right: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+i {
+    padding-left: 7px;
+}
+
+@media only screen and (max-width: 767px) {
+    header ul {
+        display: block;
+    }
+
+    .container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .resume .container .row {
+        display: block;
+        padding: 10px;
+    }
+
+    .mainPart .container h1 {
+        position: relative;
+        left: 30%;
+    }
+
+    .year {
+        position: relative;
+        left: -33%;
+    }
+    footer {
+        padding: 10px;
+    }
+    
+    form .row {
+        display: block;
+    }
+    
+    footer .row {
+        display: block;
+    }
+    
+    footer .row .col .new_row {
+        display: block;
+    }
+    
+    footer .row .col h3 {
+        text-align: left;
+    }
+}
